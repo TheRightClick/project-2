@@ -11,7 +11,7 @@ const bcrypt = require('bcrypt')
 const mongoose = require('mongoose');
 const mongoURI = process.env.MONGOURI;
 const db = mongoose.connection;
-//mongoose stuff below
+//mongoose stuff
 mongoose.connect(mongoURI, {
     useFindAndModify:false,
     useNewUrlParser:true,
