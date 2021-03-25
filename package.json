@@ -4,14 +4,14 @@
   "engines": {
     "node": "12.18.4"
   },
-  "description": " ",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheRightClick/project-2.git"
+    "url": "https://github.com/TheRightClick/project-2.git"
   },
   "keywords": [],
   "author": "",

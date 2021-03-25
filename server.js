@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt')
 
 //database
 const mongoose = require('mongoose');
-const mongoURI = process.env.MONGOURI;
+const mongoURI = process.env.MONGODBURI;
 const db = mongoose.connection;
 //mongoose stuff
 mongoose.connect(mongoURI, {
