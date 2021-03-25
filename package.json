@@ -7,12 +7,10 @@
   "engines": {
     "node": "12.18.4"
   },
-  "description": "",
   "main": "server.js",
- 
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheRightClick/project-2.git"
+    "url": "git+https://github.com/TheRightClick/project-2.git"
   },
   "keywords": [],
   "author": "",
@@ -32,5 +30,6 @@
   "bugs": {
     "url": "https://github.com/TheRightClick/project-2/issues"
   },
-  "homepage": "https://github.com/TheRightClick/project-2#readme"
+  "homepage": "https://github.com/TheRightClick/project-2#readme",
+  "description": ""
 }
