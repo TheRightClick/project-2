@@ -1,0 +1,34 @@
+<%- include ('./partials/header.ejs') %>
+<div class="row">
+    <div id="mediaShowDiv" class='one-half column'>
+        <a class="mediaShow" href='\<%= media.filePath.replace(/^.*\\/, "") %>'>
+            <img class="mediaShow" src="\<%= media.filePath.replace(/^.*\\/, "") %>">
+            <p style="margin:auto;"><a href='\<%= media.filePath.replace(/^.*\\/, "") %>'>View Full Size Image
+                </a>
+            </p>
+    </div>
+    <div class="one-half column">
+        <h3>Name:</h3>
+        <p><%= media.shortName %></p>
+        <h3>Categories:</h3>
+        <%for(let i= 0; i < media.category.length; i++) {%>
+        <p><%=media.category[i]%></p>
+        <%}%>
+            <h3>Description:</h3> <p><%= media.description %></p>
+        <h3>File Name:</h3>
+        <p><%=media.filePath.replace(/^.*\\/, "")%></p>
+        <div class="row">
+            <div class="one-half column">
+                <button id="edit" onclick="window.location.href ='/media/<%=media.id;%>/edit'">Edit</button>
+                <form action="/media/<%=media.id%>?_method=DELETE" method="POST">
+                    <button type="submit" id="delete" value="DELETE">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+</script>
+</body>
+
+</html>

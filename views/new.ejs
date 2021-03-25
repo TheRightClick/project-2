@@ -1,0 +1,28 @@
+<%- include ('./partials/header.ejs') %>
+
+<body>
+
+    <div class='row'>
+        <div class='one-half column'>
+            <div class="container">
+                </form>
+                <form id="uploadForm" action="/media/upload" enctype="multipart/form-data" method="POST">
+                    Name:<br /> <input type="text" name="shortName" placeholder="name" /><br />
+                    <select class="form-select form-select-lg" multiple size="3" id="newCat" name="category" aria-label="size 3 select example">
+                        <option id="1" value="Ante-mortem">Ante-Mortem</option>
+                        <option id="2" value="Slaughter">Slaughter</option>
+                        <option id="3" value="Processing">Processing</option>
+                    </select>
+                    Description <br /><textarea name="description" id="descBox" placeholder="description"></textarea>
+                    Image file: <br /><input type="file" id="imgFile" value='imageFile' name="imageFile" placeholder="imageFile" onchange="getImage(this)" /><br />
+                    <input type="submit" value="Add Media" />
+            </div>
+        </div>
+        <div class='one-half column' id='imgDiv'>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

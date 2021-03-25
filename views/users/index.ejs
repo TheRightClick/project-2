@@ -1,0 +1,26 @@
+<%- include ('../partials/header.ejs') %>
+
+<!-- <div class="container"> -->
+<!-- <h1>Media Gallery</h1> -->
+<div class="userGrid">
+    <% for (let i = 0; i < users.length; i++) {%>
+    <div class="container">
+        <a href='/users/<%=users[i].id;%>/edit'>
+            <p><%=users[i].username%></p>
+        </a>
+        <button class="editButton" onclick="window.location.href ='/users/<%=users[i].id;%>/edit'">Edit</button>
+        <form action="/users/<%=users[i].id%>?_method=DELETE" method="POST">
+            <button type="submit" class="delete" value="DELETE">Delete</button>
+        </form>
+
+
+    </div>
+
+    <%}%>
+            
+                </div>
+    </body>
+</html>
+   
+    </body>
+</html>

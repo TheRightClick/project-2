@@ -1,0 +1,36 @@
+<%- include ('./partials/header.ejs') %>
+<script>
+    window.onload = function() {
+        const catString = "<%=media.category%>"
+        const catArray = catString.split(",")
+        ckCat(catArray)
+    }
+</script>
+<div class="row">
+    <div id="test" class="one-half column">
+        <form action="/media/<%=index%>?_method=PUT" method="POST">
+            Name:<br /> <input type="text" name="name" value="<%=media.shortName%>" /><br />
+            Category:<br />
+            <select class="form-select form-select-lg" multiple size="3" id="newCat" name="category" aria-label="size 3 select example">
+                <option id="1" value="Ante-mortem">Ante-mortem</option>
+                <option id="2" value="Slaughter">Slaughter</option>
+                <option id="3" value="Processing">Processing</option>
+            </select>
+            Description <br /><textarea name="description" id="descBox" value="<%=media.description%>"><%=media.description%></textarea>
+            <br />
+            <input type="submit" class=editBtn value="Update Media">
+            <button type="submit" class="deleteBtn" value="DELETE">Delete
+        </form>
+    </div>
+    <div class="one-half column">
+        <img class="mediaImg" src='\<%= media.filePath.replace(/^.*\\/, "") %>'>
+        <p style="margin:auto;"><a href='\<%= media.filePath.replace(/^.*\\/, "") %>'>View Full Size Image
+            </a> </p>
+    </div>
+</div>
+
+
+
+
+
+<script src="" async defer></script>

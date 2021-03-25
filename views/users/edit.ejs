@@ -1,0 +1,45 @@
+<%- include ('../partials/header.ejs') %>
+<script>
+</script>
+<div class="row">
+    <div id="test" class="container">
+        <form id="userForm" method="POST" action="/users/<%= user.id %>?_method=PUT">
+            <div class="container formCnt"></div>
+            <h4>Edit user Page</h4><br />
+
+            <label>
+                <span>Username:</span><br />
+                <input type="text" name="username" value="<%=user.username%>" />
+            </label>
+            <label>
+                <span>First Name</span><br />
+                <input type="text" name="firstName" value="<%=user.firstName%>" />
+            </label>
+            <label>
+                <span>Last Name</span><br />
+                <input type="text" name="lastName" value="<%=user.lastName%>" />
+            </label>
+            <label>
+                <span>Password:</span><br />
+                <input id="pass" type="password" name="password" oninput="ckPass()" />
+                <span id="errorText" hidden style="color:red">Passwords do not match</span>
+            </label>
+            <label>
+                <span>Confirm Password:</span><br />
+                <input type="password" id="conPass" name="passwordConf" oninput="ckPass()" />
+            </label>
+            <%if(currentUser.isAdmin) {%>
+            <label>
+                <input type="checkbox" name="isAdmin" <% if (user.isAdmin) { %> checked <% } %> />
+
+                <span>Admin?</span>
+            </label>
+            <%}%>
+            <br>
+            <br>
+            <input type="submit"  id="btnSubmit" value="Update" />
+        </div> 
+        </form>
+    </div>
+   
+</div>

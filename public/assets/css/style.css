@@ -1,0 +1,200 @@
+* {
+    background-color:whitesmoke;
+}
+
+#newCat {
+    height: 160%;
+}
+
+nav {
+padding: 0;
+}
+
+.mediaGrid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    padding: 0;
+
+}
+
+#descBox{
+    width: 100%;
+}
+
+
+#mediaShowDiv {
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.mediaShow{
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.mediaDiv {
+    flex-basis: auto;
+    text-align: center;
+    position: relative;
+    margin: 1%;
+}
+
+/* src for hero https://codetheweb.blog/demo/full-image-hero/ */
+.hero {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url('/assets/images/swift.jpg');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+
+.hero h1 {
+     font-size: 5em; 
+    margin-top: 0;
+    margin-bottom: 30%;
+    font-weight:900;
+    background:none;
+    color: rgb(0, 0, 0);
+}
+
+.hero-inner {
+    background: none;
+}
+
+#btnHeroLogin {
+    size:  350%;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid white;
+    border-radius: 20%;
+    background-color: rgba(1, 150, 33, 0.8);
+}
+
+#btnHeroCreate {
+    size: 200%;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid white;
+    border-radius: 20%;
+    background-color: rgba(56, 100, 245, 0.8);
+}
+
+.mediaImg {
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    background-color: white;
+}
+
+#edit{
+    background-color: rgb(77, 77, 221);
+    color: black;
+}
+
+#buy {
+    background-color: rgb(65, 124, 65);
+    color: black;
+}
+
+#delete{
+    background-color: rgb(151, 75, 75);
+    color: black;
+}
+
+.mediaDiv .editButton {
+    position: absolute;
+    background-color: grey;
+    background-image: url("/assets/images/edit.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 57%;
+    left: 70%;
+    transform: translate(-275%, 5%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    width:10%;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display:none;
+  }
+
+  .formCnt {
+     max-height: 30%;
+  }
+
+  .mediaDiv .delete {
+    position: absolute;
+    background-color: lightgrey;
+    background-image: url("/assets/images/delete.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 57%;
+    left: 70%;
+    transform: translate(-175%, 5%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    width:10%;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display:none;
+  }
+
+  .deleteBtn{
+        background-color: lightcoral;
+  }
+
+  .editBtn{
+    background-color:rgb(140, 212, 236);
+}
+  .mediaDiv:hover .editButton{
+      display:block;
+  }
+
+  .mediaDiv:hover .delete{
+    display:block;
+}
+  .editButton:hover{
+      background-color: white;
+  }
+
+  .delete:hover{
+    background-color:black;
+  }
+
+  .editBtn:hover{
+    background-color:rgb(0, 128, 170);
+}
+  .deleteBtn:hover{
+      background-color: rgb(204, 0, 0);
+}
