@@ -16,7 +16,7 @@
         <%}%>
             <h3>Description:</h3> <p><%= media.description %></p>
         <h3>File Name:</h3>
-        <p><%=media.filePath.replace(/^.*\\/, "")%></p>
+        <p>/<%=media.filePath.replace(/^.*\\/, "")%></p>
         <div class="row">
             <div class="one-half column">
                 <button id="edit" onclick="window.location.href ='/media/<%=media.id;%>/edit'">Edit</button>
