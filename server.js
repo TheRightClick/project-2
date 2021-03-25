@@ -12,16 +12,9 @@ const mongoose = require('mongoose');
 const mongoURI = process.env.MONGODBURI;
 const db = mongoose.connection;
 //mongoose stuff
-mongoose.connect(mongoURI, {
-    useFindAndModify:false,
-    useNewUrlParser:true,
-    useUnifiedTopology: true
-}, ()=>{
-    console.log("database connection checked");
-})
-db.on('error', (err)=>{console.log('ERROR: ', err.message)})
-db.on('connected', (err)=>{console.log('mongo connected')})
-db.on('disconnected', (err)=>{console.log('mongo disconnected')})
+mongoose.connect(mongoURI ,  { useNewUrlParser: true, useUnifiedTopology: true})
+.then(() => console.log("Database Connected Successfully", mongoURI))
+.catch(err => console.log(err))
 
 
 //middleware
