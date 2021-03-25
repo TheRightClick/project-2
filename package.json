@@ -1,14 +1,15 @@
 {
   "name": "project-2",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
   "engines": {
     "node": "12.18.4"
   },
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+ 
   "repository": {
     "type": "git",
     "url": "https://github.com/TheRightClick/project-2.git"

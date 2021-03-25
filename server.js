@@ -7,7 +7,7 @@ const PORT = process.env.PORT
 const bcrypt = require('bcrypt')
 
 
-//database
+//database below
 const mongoose = require('mongoose');
 const mongoURI = process.env.MONGODBURI;
 const db = mongoose.connection;
