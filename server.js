@@ -17,7 +17,7 @@ mongoose.connect(mongoURI ,  { useNewUrlParser: true, useUnifiedTopology: true})
 .catch(err => console.log(err))
 
 
-//middleware below
+//middleware below this
 app.use(
     session({
       secret: process.env.SECRET, //a random string do not copy this value or your stuff will get hacked
