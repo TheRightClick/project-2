@@ -4,7 +4,7 @@
     <% for (let i = 0; i < media.length; i++) {%>
     <div class="mediaDiv">
         <a href='http://localhost:3000/media/<%=media[i].id;%>'>
-            <img class="mediaImg" alt="<%=media[i].shortName%>" src="<%=media[i].filePath.replace(/^.*\\/, "")%>">
+            <img class="mediaImg" alt="<%=media[i].shortName%>" src="/<%=media[i].filePath.replace(/^.*\\/, "")%>">
         </a>
         <button class="editButton" onclick="window.location.href ='/media/<%=media[i].id;%>/edit'"></button>
         <form action="/media/<%=media[i].id%>?_method=DELETE" method="POST">
