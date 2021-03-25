@@ -100,7 +100,7 @@ router.get('/new', (req, res)=>{
 
 //create
 router.post('/upload', upload.single('imageFile'),(req, res, next)=>{  
-    req.body.filePath = req.file.path
+    req.body.filePath = req.file.filename
       Media.create(req.body, (error, createdMedia) => {  
       console.log(req.body)  
       if (error){
