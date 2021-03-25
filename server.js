@@ -28,7 +28,7 @@ app.use(
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'))
 //adds uploads to static route for accesing it
-app.use(express.static('uploads'))
+// app.use(express.static('uploads'))
 app.use(methodOverride('_method'))
 
 const isAuthenticated = (req, res, next) => {
