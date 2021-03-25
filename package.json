@@ -1,6 +1,9 @@
 {
-  "name": "hw18-mongoose-store",
+  "name": "project-2",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.18.4"
+  },
   "description": "Make a product inventory manager with full CRUD using Mongoose.",
   "main": "server.js",
   "scripts": {
