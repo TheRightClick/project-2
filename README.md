@@ -7,10 +7,12 @@ link: https://media-gallery-project.herokuapp.com/
 -user can create new image in Db by linking to external site like sharepoint or publicly hosted site
 -user can describe and categorize those images
 
-Index: 
+Index: ![Index](index.png)
  
 
-New: 
+
+
+New:  ![Index](new.png)
 
 
 
@@ -28,7 +30,8 @@ New:
 
 
 
-Edit: 
+I didn't like my modal, so I got rid of it and went with edit page. 
+Edit: ![Index](edit.png)
  
 
 

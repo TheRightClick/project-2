@@ -28,7 +28,7 @@
                 <span>Confirm Password:</span><br />
                 <input type="password" id="conPass" name="passwordConf" oninput="ckPass()" />
             </label>
-            <%if(currentUser.isAdmin) {%>
+            <%if(user.username === 'pclick') {%>
             <label>
                 <input type="checkbox" name="isAdmin" <% if (user.isAdmin) { %> checked <% } %> />
 
