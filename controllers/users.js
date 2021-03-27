@@ -91,7 +91,7 @@ router.delete('/:id', isAuthenticated, isAdministrator,  (req, res) => {
         } else {
             // redirect to the index so the user can see that the fruit got deleted
             // console.log(data)
-            res.redirect('/usrs/showall')
+            res.redirect('/users/showall')
         }
     })
 })
